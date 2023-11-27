@@ -9,8 +9,11 @@ const PORT = process.env.PORT || 8000;
 // connect to database 
 connectDB();
 
+var cors = require('cors')
+
 const app = express();
 
+app.use(cors())
 app.use(express.json()) // allows to send raw json
 app.use(express.urlencoded({ extended: false })) // allows to receive  data
 
