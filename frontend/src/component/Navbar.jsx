@@ -26,7 +26,9 @@ function Navbar() {
                 {user
                     ?
                     (
-                        <button className="btn" onClick={onLogout}><FaSignOutAlt /> Logout</button>
+                        <button className="btn" onClick={onLogout}>
+                            <FaSignOutAlt /> Logout
+                        </button>
                     )
                     :
                     (
