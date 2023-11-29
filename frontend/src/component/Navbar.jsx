@@ -17,11 +17,11 @@ function Navbar() {
 
     return (
         <header className='header'>
-            <div className="logo">
+            <h2>
                 <Link to='/'>
                     Support Desk
                 </Link>
-            </div>
+            </h2>
             <ul>
                 {user
                     ?
