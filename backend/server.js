@@ -17,13 +17,10 @@ app.use(cors())
 app.use(express.json()) // allows to send raw json
 app.use(express.urlencoded({ extended: false })) // allows to receive  data
 
-app.get('/', (req, res) => {
-    res.send('hello');
-})
-
 // Routes 
 app.use('/api/users', require('./routes/userRoutes'))
 app.use('/api/tickets', require('./routes/ticketRoutes'))
+app.use('/api/notes', require('./routes/noteRoutes'))
 
 app.use(errorHandler)
 
